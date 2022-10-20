@@ -71,6 +71,7 @@ main{
     height: calc(100% / 10);
     border: 2px solid white;
     cursor: pointer;
+    color: white;
 }
 
 /* FOOTER */

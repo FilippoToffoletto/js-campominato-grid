@@ -10,21 +10,29 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro e
 const container  = document.querySelector('.container');
 const elementPerRow = 10;
 
-const randomIds = [];
+const randomId = [];
 
-init();
+init(elementPerRow);
+
 // inizializzo le 100 caselle 
 
 function init(numElements){
     const totalSquares = Math.pow(elementPerRow, 2);
-    
     for(let i = 0; i < totalSquares; i++){
-        createSquare(totalSquares);
+        createSquare(i);
     }
 }
 
 function createSquare(divSquare){
     const square = document.createElement('div');
     square.className = 'square';
+    square.innerHTML = divSquare + 1;
     container.append(square);
 }
+
+
+
+
+
+
+
