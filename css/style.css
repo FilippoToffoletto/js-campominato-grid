@@ -73,6 +73,9 @@ main{
     cursor: pointer;
     color: white;
 }
+.crimson{
+    background-color: crimson;
+}
 
 /* FOOTER */
 footer .ft-container{

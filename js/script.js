@@ -10,7 +10,6 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro e
 const container  = document.querySelector('.container');
 const elementPerRow = 10;
 
-const randomId = [];
 
 init(elementPerRow);
 
@@ -27,9 +26,13 @@ function createSquare(divSquare){
     const square = document.createElement('div');
     square.className = 'square';
     square.innerHTML = divSquare + 1;
+    square.addEventListener('click', clickSquare)
     container.append(square);
 }
 
+function clickSquare(){
+    console.log(this.innerHTML);
+}
 
 
 
