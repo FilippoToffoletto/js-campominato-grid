@@ -10,8 +10,12 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro e
 const container  = document.querySelector('.container');
 const elementPerRow = 10;
 
+document.getElementById('play').addEventListener('click', function(){
+    container.innerHTML = '';
+    init(elementPerRow);
+})
 
-init(elementPerRow);
+// init(elementPerRow);
 
 // inizializzo le 100 caselle 
 
@@ -32,6 +36,7 @@ function createSquare(divSquare){
 
 function clickSquare(){
     console.log(this.innerHTML);
+    this.classList.add('crimson');
 }
 
 
